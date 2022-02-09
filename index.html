@@ -14,36 +14,62 @@
 			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 			crossorigin="anonymous"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/style.css" />
 
 		<title>Squid Games</title>
 	</head>
 	<body>
-		<div>
-			<header class="main">
-				<div class="logo-container">
-					<img class="logo" src="./resources/istebg.png" alt="" />
-				</div>
-				<nav>
-					<a href="#" class="links"><span>Home</span> </a>
-					<a href="#" class="links"><span>About</span> </a>
-					<a href="#" class="links"><span>Rules</span> </a>
-					<a href="#" class="links"><span>Contact</span> </a>
-				</nav>
-			</header>
-		</div>
+		<nav class="navbar navbar-expand-sm">
+			<img class="logo navbar-brand" src="./resources/istebg.png" alt="" />
+
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbar"
+				aria-controls="navbar"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="" role="button"
+					><i class="fa fa-bars" aria-hidden="true" style="color: #ffffff"></i
+				></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav text-center ml-auto">
+					<li class="nav-item">
+						<a href="#" class="nav-link links"><span>Home</span> </a>
+					</li>
+					<li class="nav-item">
+						<a href="#about" class="nav-link links"><span>About</span> </a>
+					</li>
+					<li class="nav-item">
+						<a href="#rules" class="nav-link links"><span>Rules</span> </a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link links"><span>Contact</span> </a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
 		<!-- Banner -->
 
 		<div class="container-fluid banner">
 			<div class="row d-flex align-items-center justify-content-center">
-				<div><h1 class="banner-text">Dev'sQuid</h1></div>
+				<div class="col-sm-12 text-center">
+					<h1 class="banner-text">Dev'sQuid</h1>
+				</div>
 			</div>
 			<div
 				class="row d-flex align-items-center justify-content-center button-row"
 			>
-				<div class="col-md-2">
+				<div>
 					<button type="button" class="btn btn-lg btn-block register-button">
 						< Register >
 					</button>
@@ -53,7 +79,7 @@
 		<!-- Banner Ends-->
 
 		<!-- About -->
-		<div class="container-fluid about">
+		<div class="container-fluid about" id="about">
 			<div
 				class="row d-flex align-items-center justify-content-center top-about"
 			>
@@ -81,7 +107,7 @@
 		<!-- About Ends-->
 
 		<!-- Rules -->
-		<div class="container-fluid rules">
+		<div class="container-fluid rules" id="rules">
 			<div class="row d-flex align-items-center justify-content-center top">
 				<div>
 					<span>Rules</span>
