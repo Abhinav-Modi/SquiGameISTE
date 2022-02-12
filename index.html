@@ -1,208 +1,741 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
 
-		<!-- Bootstrap CSS -->
-		<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="css/style.css" />
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+	</style>
+	<script src="https://kit.fontawesome.com/1a1969ab5e.js" crossorigin="anonymous"></script>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css" />
 
-		<title>Squid Games</title>
-	</head>
-	<body>
-		<nav class="navbar navbar-expand-sm">
-			<img class="logo navbar-brand" src="./resources/istebg.png" alt="" />
+	<title>Squid Games</title>
+</head>
 
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbar"
-				aria-controls="navbar"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="" role="button"
-					><i class="fa fa-bars" aria-hidden="true" style="color: #ffffff"></i
-				></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbar">
-				<ul class="navbar-nav text-center ml-auto">
-					<li class="nav-item">
-						<a href="#" class="nav-link links"><span>Home</span> </a>
-					</li>
-					<li class="nav-item">
-						<a href="#about" class="nav-link links"><span>About</span> </a>
-					</li>
-					<li class="nav-item">
-						<a href="#rules" class="nav-link links"><span>Rules</span> </a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link links"><span>Contact</span> </a>
-					</li>
-				</ul>
+<body>
+	<nav class="navbar navbar-expand-sm">
+		<img class="logo navbar-brand" src="./resources/istebg.png" alt="" />
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<span class="" role="button"><i class="fa fa-bars" aria-hidden="true" style="color: #ffffff"></i></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="navbar-nav text-center ml-auto">
+				<li class="nav-item">
+					<a href="#" class="nav-link links"><span>Home</span> </a>
+				</li>
+				<li class="nav-item">
+					<a href="#about" class="nav-link links"><span>About</span> </a>
+				</li>
+				<li class="nav-item">
+					<a href="#rules" class="nav-link links"><span>Rules</span> </a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link links"><span>Contact</span> </a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Banner -->
+	<!-- 
+    <div class="container-fluid banner">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-sm-12 text-center">
+          <h1 class="banner-text">Dev'sQuid</h1>
+        </div>
+      </div>
+      <div
+        class="row d-flex align-items-center justify-content-center button-row"
+      >
+        <div>
+          <button type="button" class="btn btn-lg btn-block register-button">
+             Register
+          </button>
+        </div>
+      </div>
+    </div> -->
+	<!-- Banner Ends-->
+
+	<!-- About -->
+	<div class="container-fluid about" id="about">
+		<div class="row d-flex align-items-center justify-content-center top-about">
+			<span>About</span>
+		</div>
+		<div class="row d-flex align-items-center justify-content-around">
+			<div class="col-md-4 about-img">
+				<img class="img-fluid" src="./resources/aboutImg.png" alt="image" />
 			</div>
-		</nav>
-
-		<!-- Banner -->
-
-		<div class="container-fluid banner">
-			<div class="row d-flex align-items-center justify-content-center">
-				<div class="col-sm-12 text-center">
-					<h1 class="banner-text">Dev'sQuid</h1>
-				</div>
-			</div>
-			<div
-				class="row d-flex align-items-center justify-content-center button-row"
-			>
-				<div>
-					<button type="button" class="btn btn-lg btn-block register-button">
-						< Register >
-					</button>
-				</div>
+			<div class="col-md-5 about-content">
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+					delectus magnam minima ipsam possimus molestias, adipisci quam ut
+					accusantium assumenda qui velit, fugiat vel animi nulla, sint
+					reiciendis beatae asperiores? Lorem, ipsum dolor sit amet
+					consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Qui nulla aliquid accusamus, architecto id nobis dolor voluptatum
+					nihil excepturi libero iure sint perferendis eius odit accusantium
+					mollitia in consequuntur placeat?
+				</p>
 			</div>
 		</div>
-		<!-- Banner Ends-->
+	</div>
 
-		<!-- About -->
-		<div class="container-fluid about" id="about">
-			<div
-				class="row d-flex align-items-center justify-content-center top-about"
-			>
-				<span>About</span>
-			</div>
-			<div class="row d-flex align-items-center justify-content-around">
-				<div class="col-md-4 about-img">
-					<img src="./resources/aboutImg.png" alt="image" />
-				</div>
-				<div class="col-md-5 about-content">
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-						delectus magnam minima ipsam possimus molestias, adipisci quam ut
-						accusantium assumenda qui velit, fugiat vel animi nulla, sint
-						reiciendis beatae asperiores? Lorem, ipsum dolor sit amet
-						consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Qui nulla aliquid accusamus, architecto id nobis dolor voluptatum
-						nihil excepturi libero iure sint perferendis eius odit accusantium
-						mollitia in consequuntur placeat?
-					</p>
-				</div>
+	<!-- About Ends-->
+
+	<!-- Rules -->
+	<div class="container-fluid rules" id="rules">
+		<div class="row d-flex align-items-center justify-content-center top">
+			<div>
+				<span>Rules</span>
 			</div>
 		</div>
-
-		<!-- About Ends-->
-
-		<!-- Rules -->
-		<div class="container-fluid rules" id="rules">
-			<div class="row d-flex align-items-center justify-content-center top">
-				<div>
-					<span>Rules</span>
-				</div>
-			</div>
-			<div class="row d-flex align-items-center justify-content-around">
-				<div class="col-md-3 rules-card">
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="col-md-12"><h1 class="rules-heading">Game 1</h1></div>
-					</div>
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="col-md-12">
-							<p class="rules-content">
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
-								ea sunt voluptate architecto, nesciunt aut incidunt quisquam
-								saepe ducimus ipsum porro doloremque repellat eius laudantium!
-								Obcaecati qui doloribus placeat necessitatibus.
-							</p>
-						</div>
-						<div class="row d-flex align-items-center justify-content-center">
-							<div>
-								<ion-icon name="triangle-outline"></ion-icon>
-							</div>
-						</div>
+		<div class="row d-flex align-items-center justify-content-around">
+			<div class="col-md-3 rules-card">
+				<div class="row d-flex align-items-center justify-content-center">
+					<div class="col-md-12">
+						<h1 class="rules-heading">Game 1</h1>
 					</div>
 				</div>
-
-				<div class="col-md-3 rules-card">
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="col-md-12"><h1 class="rules-heading">Game 2</h1></div>
-					</div>
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="col-md-12">
-							<p class="rules-content">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-								laboriosam facere exercitationem voluptatem fuga cum illo
-								corrupti sunt saepe eveniet sequi ad, tenetur accusantium
-								molestias distinctio omnis quaerat veniam? Itaque.
-							</p>
-						</div>
+				<div class="row d-flex align-items-center justify-content-center">
+					<div class="col-md-12">
+						<p class="rules-content">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, sed neque maxime eum iusto
+							voluptates mollitia? Amet commodi, fuga nesciunt ratione laudantium maiores sed nisi
+							accusamus dolorum vitae minus blanditiis earum ullam veritatis cum, eligendi placeat sunt
+							soluta molestias voluptatibus!
+							<br>
+							<button type="button" class="btn btn-primary my-4" data-toggle="modal"
+								data-target="#exampleModalLong1">
+								Read More
+							</button>
 						<div class="row d-flex align-items-center justify-content-center">
 							<div>
 								<ion-icon name="ellipse-outline"></ion-icon>
 							</div>
 						</div>
+						</p>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+			<div class="col-md-3 rules-card">
+				<div class="row d-flex align-items-center justify-content-center">
+					<div class="col-md-12">
+						<h1 class="rules-heading">Game 2</h1>
+					</div>
+				</div>
+				<div class="row d-flex align-items-center justify-content-center">
+					<div class="col-md-12">
+						<p class="rules-content">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, sed neque maxime eum iusto
+							voluptates mollitia? Amet commodi, fuga nesciunt ratione laudantium maiores sed nisi
+							accusamus dolorum vitae minus blanditiis earum ullam veritatis cum, eligendi placeat sunt
+							soluta molestias voluptatibus!
+							<br>
+							<button type="button" class="btn btn-primary my-4" data-toggle="modal"
+								data-target="#exampleModalLong2">
+								Read More
+							</button>
+						<div class="row d-flex align-items-center justify-content-center">
+							<div>
+								<ion-icon name="triangle-outline"></ion-icon>
+							</div>
+						</div>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-md-3 rules-card">
+				<div class="row d-flex align-items-center justify-content-center">
+					<div class="col-md-12">
+						<h1 class="rules-heading">Game 3</h1>
+					</div>
+				</div>
+				<div class="row d-flex align-items-center justify-content-center">
+					<div class="col-md-12">
+						<p class="rules-content my-auto">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, sed neque maxime eum iusto
+							voluptates mollitia? Amet commodi, fuga nesciunt ratione laudantium maiores sed nisi
+							accusamus dolorum vitae minus blanditiis earum ullam veritatis cum, eligendi placeat sunt
+							soluta molestias voluptatibus!
+							<br>
+							<button type="button" class="btn btn-primary my-4" data-toggle="modal"
+								data-target="#exampleModalLong3">
+								Read More
+							</button>
+						<div class="row d-flex align-items-center justify-content-center">
+							<div>
+								<ion-icon name="square-outline"></ion-icon>
+							</div>
+						</div>
+						</p>
 					</div>
 				</div>
 
-				<div class="col-md-3 rules-card">
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="col-md-12"><h1 class="rules-heading">Game 3</h1></div>
-					</div>
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="col-md-12">
-							<p class="rules-content">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-								ab error quos id voluptates pariatur a dolore sapiente in,
-								deleniti recusandae inventore. Eum molestiae vero eligendi,
-								quasi minus voluptate odio?
-							</p>
-						</div>
-					</div>
-					<div class="row d-flex align-items-center justify-content-center">
-						<div>
-							<ion-icon name="square-outline"></ion-icon>
-						</div>
-					</div>
+			</div>
+		</div>
+	</div>
+
+	<!--modal-->
+	<div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Game 1</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
 				</div>
 			</div>
 		</div>
-		<!-- Rules End-->
+	</div>
 
-		<script
-			type="module"
-			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-		></script>
-		<script
-			nomodule
-			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-		></script>
+	<div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Game 2</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint neque voluptatum modi impedit cum
+					voluptatem error illo tempora, dolores vitae exercitationem sequi magni ut quibusdam adipisci
+					excepturi consectetur consequatur pariatur corporis ipsam? Sequi necessitatibus quo quasi id ad
+					officia sapiente perferendis consequuntur sit consequatur, eveniet repudiandae unde dolorum impedit
+					exercitationem itaque, vero perspiciatis consectetur sint, doloremque laborum! Illo quis molestias
+					ipsa recusandae eveniet consequuntur dolores et, saepe itaque? Praesentium, inventore totam.
+					Assumenda laboriosam esse doloribus sapiente, autem nam maxime eos nihil quis. Id sed nesciunt
+					recusandae necessitatibus officia. Aperiam labore veritatis eligendi excepturi sit explicabo quis
+					adipisci rerum, placeat veniam.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-		<script
-			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-			crossorigin="anonymous"
-		></script>
-	</body>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Game 3</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--modal end-->
+	<!-- Rules End-->
+
+
+	<div class="lb mx-auto">
+		<div class="leaderboard">
+			<div class="card cardd">
+				<div class="titl">
+					<img class="card-img-top lbimg" src="/resources/Squid-Game-Transparent-Background.png"
+						alt="Card image cap">
+					<h5 class="card-title my-auto">Leader Board</h>
+				</div>
+				
+				<div class="card-body">
+
+					<div class="table-responsive tbl">
+						<table class="table table-hover table-dark">
+							<thead>
+								<tr>
+									<th scope="col">Rank</th>
+									<th scope="col">Username</th>
+									<th scope="col">Score</th>
+									<th scope="col">Qualified</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark558945894985s</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- <div class="lb">
+      <div class="leaderboard">
+        <header class="heade">
+          <h1 class="h1">Leader Board</h1>
+          <img
+            class="lbimg img-fluid"
+            src="/resources/Squid-Game-Transparent-Background.png"
+            alt=""
+          />
+          <nav class="headingss">
+            <a class="active" href="">Event 1</a>
+            <a href=""> Event 2</a>
+          </nav>
+        </header>
+      </div>
+      <div class="">
+				
+
+
+				 <table class="table table-hover table-dark">
+					<thead>
+					  <tr>
+						<th class="rank"scope="col">Rank</th>
+						<th class="nick" scope="col">USERNAME</th>
+						<th class="sp" scope="col">Score</th>
+						<th class="kd" scope="col">Qualified</th>
+					  </tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="rank">1</td>
+							<td class="nick">Sc0utOP</td>
+							<td class="sp">6.308</td>
+							<td class="kd">yes</td>
+						  </tr>
+						  <tr>
+							<td class="rank">1</td>
+							<td class="nick">Sc0utOP</td>
+							<td class="sp">6.308</td>
+							<td class="kd">yes</td>
+						  </tr>
+						  <tr>
+							<td class="rank">1</td>
+							<td class="nick">Sc0utOP</td>
+							<td class="sp">6.308</td>
+							<td class="kd">yes</td>
+						  </tr>
+						  <tr>
+							<td class="rank">1</td>
+							<td class="nick">Sc0utOP</td>
+							<td class="sp">6.308</td>
+							<td class="kd">yes</td>
+						  </tr>
+						  <tr>
+							<td class="rank">1</td>
+							<td class="nick">Sc0utOP</td>
+							<td class="sp">6.308</td>
+							<td class="kd">yes</td>
+						  </tr>
+						  <tr>
+							<td class="rank">1</td>
+							<td class="nick">Sc0utOP</td>
+							<td class="sp">6.308</td>
+							<td class="kd">yes</td>
+						  </tr>
+						  <tr>
+							<td class="rank">1</td>
+							<td class="nick">Sc0utOP</td>
+							<td class="sp">6.308</td>
+							<td class="kd">yes</td>
+						  </tr>
+						  <tr>
+							<td class="rank">1</td>
+							<td class="nick">Sc0utOP</td>
+							<td class="sp">6.308</td>
+							<td class="kd">yes</td>
+						  </tr>
+						  <tr>
+							<td class="rank">1</td>
+							<td class="nick">Sc0utOP</td>
+							<td class="sp">6.308</td>
+							<td class="kd">yes</td>
+						  </tr>
+						  <tr>
+							<td class="rank">1</td>
+							<td class="nick">Sc0utOP</td>
+							<td class="sp">6.308</td>
+							<td class="kd">yes</td>
+						  </tr>
+						  <tr>
+							<td class="rank">1</td>
+							<td class="nick">Sc0utOP</td>
+							<td class="sp">6.308</td>
+							<td class="kd">yes</td>
+						  </tr>
+						  <tr>
+							<td class="rank">1</td>
+							<td class="nick">Sc0utOP</td>
+							<td class="sp">6.308</td>
+							<td class="kd">yes</td>
+						  </tr>
+						  <tr>
+							<td class="rank">1</td>
+							<td class="nick">Sc0utOP</td>
+							<td class="sp">6.308</td>
+							<td class="kd">yes</td>
+						  </tr>
+						  <tr>
+							<td class="rank">1</td>
+							<td class="nick">Sc0utOP</td>
+							<td class="sp">6.308</td>
+							<td class="kd">yes</td>
+						  </tr>
+						  <tr>
+							<td class="rank">1</td>
+							<td class="nick">Sc0utOP</td>
+							<td class="sp">6.308</td>
+							<td class="kd">yes</td>
+						  </tr>
+					</tbody>
+				  </table> 
+       </div>
+     
+			  <div class="table-wrapper-scroll-y my-custom-scrollbar">
+				<table class="table table-bordered table-striped mb-0 ">
+				  <thead>
+					<tr>
+					  <th scope="col">RANK</th>
+					  <th scope="col">USERNAME</th>
+					  <th scope="col">SCORE</th>
+					  <th scope="col">QUALIFIED</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th scope="row">1</th>
+					  <td>Mark</td>
+					  <td>Otto</td>
+					  <td>@mdo</td>
+					</tr>
+					<tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					  <tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					  <tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					  <tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					  <tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					  <tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					  <tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					  <tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					  <tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					  <tr>
+					  <th scope="row">1</th>
+					  <td>Mark</td>
+					  <td>Otto</td>
+					  <td>@mdo</td>
+					</tr><tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					  <tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					  <tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					  <tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					  <tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					<tr>
+					  <th scope="row">2</th>
+					  <td>Jacob</td>
+					  <td>Thornton</td>
+					  <td>@fat</td>
+					</tr>
+					<tr>
+					  <th scope="row">3</th>
+					  <td>Larry</td>
+					  <td>the Bird</td>
+					  <td>@twitter</td>
+					</tr>
+					<tr>
+					  <th scope="row">4</th>
+					  <td>Mark</td>
+					  <td>Otto</td>
+					  <td>@mdo</td>
+					</tr>
+					<tr>
+					  <th scope="row">5</th>
+					  <td>Jacob</td>
+					  <td>Thornton</td>
+					  <td>@fat</td>
+					</tr>
+					<tr>
+					  <th scope="row">6</th>
+					  <td>Larry</td>
+					  <td>the Bird</td>
+					  <td>@twitter</td>
+					</tr>
+				  </tbody>
+				</table> 
+      </div> 
+
+	  
+    </div>
+    <div class="piggy">
+      <img src="/75c078cca33e43f2bf5d0758.jpg" alt="" />
+    </div> -->
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>
