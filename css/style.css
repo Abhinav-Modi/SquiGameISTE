@@ -196,7 +196,7 @@ body {
 	background-position-y: 1rem;
 }
 .banner-heading1 {
-	color: #fd549d;
+	color: #fd549d !important;
 	position: relative;
 	font-size: 7.5rem;
 	margin-top: 1rem;
@@ -224,7 +224,7 @@ body {
 #timer {
 	font-size: 3em;
 	font-weight: 100;
-	color: white;
+	color: white !important;
 	text-shadow: 0 0 20px #48c8ff;
 }
 
@@ -719,7 +719,7 @@ body {
       }
     }
   
-.nav-link {
+.linkkk {
 	color: #ed1b76;
 	font-size: 0.9rem;
 }
