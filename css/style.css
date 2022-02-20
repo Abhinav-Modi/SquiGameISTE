@@ -41,6 +41,7 @@
 }
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 body {
 	font-family: TheShape;
@@ -286,51 +287,24 @@ body {
 }
 
 /* Rules */
+
 .rules {
 	padding-top: 3rem;
 }
-.rules-card {
-	padding: 3rem 2rem;
-	background: #13081b;
-	border-radius: 3rem 3rem;
-	transition: 0.3s ease-in-out;
-}
-.rules-card:hover {
-	box-shadow: 1px 1px 120px -26px rgba(0, 0, 0, 0.75);
-	-webkit-box-shadow: 1px 1px 120px -26px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 1px 1px 120px -26px rgba(0, 0, 0, 0.75);
-	transform: scale(1.05);
-	transition: 0.3s ease-in-out;
-}
+@media (hover) {
+	.rules-card:hover {
+		box-shadow: 1px 1px 120px -26px rgba(0, 0, 0, 0.75);
+		-webkit-box-shadow: 1px 1px 120px -26px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 1px 1px 120px -26px rgba(0, 0, 0, 0.75);
+		transform: scale(1.05);
+		transition: 0.3s ease-in-out;
+	}
 
-.rules-head {
-	font-size: 4rem;
-	margin-bottom: 1rem;
-	filter: drop-shadow(0 0 1.5rem #ed1b76);
+	.rules-list li {
+		list-style-type: circle;
+		padding: 0.5rem;
+	}
 }
-.rules-subhead {
-	font-size: 2.3rem;
-	margin-bottom: 2rem;
-	text-shadow: 0.025em 0.025em 0 rgba(255, 255, 0, 0.493),
-		0.05em 0.05em 0 rgba(0, 0, 255, 0.418),
-		0.075em 0.075em 0 rgba(255, 0, 0, 0.5), 0.01em 0.01em 0 rgba(0, 0, 0, 0.493);
-}
-.rules-list {
-	font-family: "Roboto", sans-serif;
-	font-size: 1.4rem;
-	line-height: 1.7rem;
-	letter-spacing: 0.05em;
-}
-.rules-list li {
-	list-style-type: circle;
-	padding: 0.5rem;
-}
-
-.rules-list li:hover::before {
-	list-style-type: circle;
-	color: #fff;
-}
-
 .ion-icon-1 {
 	font-size: 8vw;
 	filter: drop-shadow(0 0 1.5rem #ed1b76);
@@ -341,6 +315,31 @@ body {
 	filter: drop-shadow(0 0 1.5rem #ed1b76);
 	animation: animate2 10s linear infinite;
 }
+.rules-head {
+	font-size: 4rem;
+	margin-bottom: 1rem;
+	filter: drop-shadow(0 0 1.5rem #ed1b76);
+}
+.rules-card {
+	padding: 3rem 2rem;
+	background: #13081b;
+	border-radius: 3rem 3rem;
+	transition: 0.3s ease-in-out;
+}
+.rules-list {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.7rem;
+	letter-spacing: 0.05em;
+}
+.rules-subhead {
+	font-size: 2.3rem;
+	margin-bottom: 2rem;
+	text-shadow: 0.025em 0.025em 0 rgba(255, 255, 0, 0.493),
+		0.05em 0.05em 0 rgba(0, 0, 255, 0.418),
+		0.075em 0.075em 0 rgba(255, 0, 0, 0.5), 0.01em 0.01em 0 rgba(0, 0, 0, 0.493);
+}
+
 @keyframes animate1 {
 	0% {
 		transform: rotate(0deg) scale(0.9) skew(-1deg) translate(1px, 0px);
