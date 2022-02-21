@@ -9,6 +9,7 @@
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 		</style>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 		<!-- Bootstrap CSS -->
 		<link
@@ -29,7 +30,7 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/style.css" />
 
-		<title>Squid Games</title>
+		<title>Crown Jewel</title>
 	</head>
 
 	<body>
@@ -90,7 +91,11 @@
 							</div>
 							<div class="row justify-content-center align-content-center">
 								<div class="col-sm-12 text-center">
-									<button class="btnn btn--changeGradient">Register</button>
+									<a href="https://forms.gle/wZb19YnhQRMrDn9aA" target="_blank"
+										><button class="btnn btn--changeGradient">
+											Register
+										</button></a
+									>
 								</div>
 							</div>
 						</div>
@@ -109,10 +114,20 @@
 					<span>About</span>
 				</div>
 				<div class="row d-flex align-items-center justify-content-center">
-					<div class="col-md-4 about-img">
+					<div
+						class="col-md-4 about-img"
+						data-aos="fade-right"
+						data-aos-duration="600"
+						data-aos-easing="ease-in-out"
+					>
 						<img class="img-fluid" src="./resources/aboutImg.png" alt="image" />
 					</div>
-					<div class="col-md-6 about-content">
+					<div
+						class="col-md-6 about-content"
+						data-aos="fade-left"
+						data-aos-duration="600"
+						data-aos-easing="ease-in-out"
+					>
 						<p>
 							ISTE Manipal presents
 							<span class="hacker"> Crown Jewel </span> our very own Squid Games
@@ -137,10 +152,22 @@
 					</div>
 				</div>
 				<div class="row d-flex align-items-center justify-content-around">
-					<div class="col-lg-3 icon1 text-center">
+					<div
+						class="col-lg-3 icon1 text-center"
+						class="col-lg-6 rules-card"
+						data-aos="zoom-in"
+						data-aos-duration="800"
+						data-aos-offset="-100"
+						data-aos-easing="ease-in-out"
+					>
 						<ion-icon class="ion-icon-1" name="triangle-outline"></ion-icon>
 					</div>
-					<div class="col-lg-6 rules-card">
+					<div
+						class="col-lg-6 rules-card"
+						data-aos="fade-up"
+						data-aos-duration="800"
+						data-aos-easing="ease-in-out"
+					>
 						<div
 							class="row d-flex align-items-center justify-content-center rules-subhead"
 						>
@@ -178,7 +205,13 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 icon2 text-center">
+					<div
+						class="col-lg-3 icon2 text-center"
+						data-aos="zoom-in"
+						data-aos-duration="800"
+						data-aos-offset="-100"
+						data-aos-easing="ease-in-out"
+					>
 						<ion-icon class="ion-icon-2" name="square-outline"></ion-icon>
 					</div>
 				</div>
@@ -187,7 +220,12 @@
 			<!-- leaderboard -->
 
 			<div class="lb mx-auto" id="leaderboard">
-				<div class="leaderboard">
+				<div
+					class="leaderboard"
+					data-aos="fade-up"
+					data-aos-duration="800"
+					data-aos-easing="ease-in-out"
+				>
 					<div class="card cardd">
 						<div class="titl">
 							<img
@@ -397,28 +435,52 @@
 						<h1 class="elimination">ELIMINATIONS</h1>
 					</div>
 					<div class="row">
-						<div class="col-sm-3 participants">
+						<div
+							class="col-sm-3 participants"
+							class="leaderboard"
+							data-aos="fade-right"
+							data-aos-duration="800"
+							data-aos-easing="ease-in-out"
+						>
 							<i class="fa fa-user"></i>
 							<br />
 							<br />
 							<h2>TOTAL NO. OF PATICIPANTS</h2>
 							<h2 class="num" data-max="40"></h2>
 						</div>
-						<div class="col-sm-3 participants">
+						<div
+							class="col-sm-3 participants"
+							class="leaderboard"
+							data-aos="fade-up"
+							data-aos-duration="800"
+							data-aos-easing="ease-in-out"
+						>
 							<i class="fa-solid fa-x red"></i>
 							<br />
 							<br />
 							<h2 class="red">TOTAL PLAYERS Eliminated</h2>
 							<h2 class="num green" data-max="00"></h2>
 						</div>
-						<div class="col-sm-3 participants">
+						<div
+							class="col-sm-3 participants"
+							class="leaderboard"
+							data-aos="fade-up"
+							data-aos-duration="800"
+							data-aos-easing="ease-in-out"
+						>
 							<i class="fa-solid fa-check"></i>
 							<br />
 							<br />
 							<h2>NO. OF PLAYERS REMAINING</h2>
 							<h2 class="num" data-max="40"></h2>
 						</div>
-						<div class="col-sm-3 participants">
+						<div
+							class="col-sm-3 participants"
+							class="leaderboard"
+							data-aos="fade-left"
+							data-aos-duration="800"
+							data-aos-easing="ease-in-out"
+						>
 							<i class="fa fa-briefcase red"></i>
 							<br />
 							<br />
@@ -431,7 +493,34 @@
 		</div>
 
 		<!-- footer -->
-
+		<footer>
+			<div class="row justify-content-center align-content-center footer-row">
+				<div class="col-lg-6 text-center">
+					<a href="https://www.facebook.com/istemanipal/" target="_blank"
+						><ion-icon class="footer-icon" name="logo-facebook"></ion-icon
+					></a>
+					<a href="https://www.instagram.com/istemanipal/?hl=en" target="_blank"
+						><ion-icon class="footer-icon" name="logo-instagram"></ion-icon
+					></a>
+					<a
+						href="https://www.linkedin.com/company/iste-manipal/mycompany/"
+						target="_blank"
+						><ion-icon class="footer-icon" name="logo-linkedin"></ion-icon
+					></a>
+					<a href=""
+						><ion-icon class="footer-icon" name="mail-outline"></ion-icon
+					></a>
+				</div>
+			</div>
+			<div class="row justify-content-center align-content-center">
+				<div class="col-md-10 text-center">
+					<p class="footer-text">
+						Copyright ©2022 All rights reserved | Created with love by
+						<a href="https://istemanipal.com/" target="_blank">ISTE Manipal</a>
+					</p>
+				</div>
+			</div>
+		</footer>
 		<!-- footer ends -->
 
 		<script src="./index.js"></script>
@@ -465,5 +554,10 @@
 		></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="main.js"></script>
+		<!-- AOS -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>

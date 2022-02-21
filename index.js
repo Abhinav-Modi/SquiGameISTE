@@ -7,7 +7,6 @@ function updateTimer() {
 	hours = Math.floor(diff / (1000 * 60 * 60));
 	mins = Math.floor(diff / (1000 * 60));
 	secs = Math.floor(diff / 1000);
-
 	d = days;
 	h = hours - days * 24;
 	m = mins - hours * 60;

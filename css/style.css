@@ -39,9 +39,15 @@
 	border: none;
 	text-decoration: none;
 }
+
 html {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
+}
+.loading {
+	width: 100%;
+	height: 100vh;
+	background: black;
 }
 body {
 	font-family: TheShape;
@@ -73,7 +79,6 @@ body {
 		rgba(0, 0, 0, 1) 71%
 	);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#163b45",endColorstr="#000000",GradientType=1);
-	padding-bottom: 10rem;
 }
 
 .navbar {
@@ -248,9 +253,7 @@ body {
 .timer {
 	height: 100%;
 	margin-top: 0.4rem;
-
-	margin-top: 2rem;
-
+	padding: 4rem 0rem;
 	display: block;
 }
 #timer-head {
@@ -338,6 +341,9 @@ body {
 	text-shadow: 0.025em 0.025em 0 rgba(255, 255, 0, 0.493),
 		0.05em 0.05em 0 rgba(0, 0, 255, 0.418),
 		0.075em 0.075em 0 rgba(255, 0, 0, 0.5), 0.01em 0.01em 0 rgba(0, 0, 0, 0.493);
+}
+::marker {
+	color: #ed1b76;
 }
 
 @keyframes animate1 {
@@ -641,7 +647,7 @@ thead {
 .counter {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 200px;
+
 	padding-top: 25rem;
 }
 
@@ -679,6 +685,10 @@ h2 {
 }
 .red {
 	color: #ed1b76;
+}
+.elimination {
+	filter: drop-shadow(0 0 1.5rem #ed1b76);
+	font-size: 3rem;
 }
 
 /* Counter ends */
@@ -739,6 +749,38 @@ h2 {
 }
 
 /*footer*/
+footer {
+	padding-top: 3rem;
+	background-color: #0e3742;
+}
+.footer-icon {
+	font-size: 2rem;
+	margin: 2rem;
+}
+footer a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+footer a:hover {
+	color: #ff287e;
+	text-decoration: none;
+}
+footer a:active {
+	color: #ff287e;
+	text-decoration: none;
+}
+.footer-text {
+	font-family: "Roboto", sans-serif;
+	margin-top: 0.6rem;
+}
+.footer-row {
+	height: 2rem;
+}
 /*footer*/
 
 @media (max-width: 780px) {
@@ -855,5 +897,12 @@ h2 {
 @media (max-width: 387px) {
 	.elimination {
 		font-size: 2rem;
+	}
+}
+
+@media (max-width: 400px) {
+	.footer-icon {
+		font-size: 1.5rem;
+		margin: 1rem;
 	}
 }
