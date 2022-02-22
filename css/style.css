@@ -168,8 +168,15 @@ body {
 		-1% 52%
 	);
 }
+#navbar-stick {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	left: 0;
+}
 
-@media (max-width: 576px) {
+@media (max-width: 993px) {
 	.logo {
 		width: 50%;
 	}
@@ -203,28 +210,16 @@ body {
 	background-position-y: 1rem;
 }
 .banner-heading1 {
-	color: #fff !important;
+	color: #fff;
 	position: relative;
 	font-size: 7.5rem;
 	margin-top: 1rem;
 	outline: none;
-	line-height: 6.6rem;
+	word-spacing: 0.1rem;
 	height: 100%;
 	width: 100%;
-	text-shadow: 0 0 10px #2eb3b0;
-}
-.banner-heading2 {
-	position: relative;
-	font-size: 7.5rem;
 
-	/* color: #2eb3b0; */
-	color: #fff;
-
-	outline: none;
-	margin-top: 1.5rem;
-	height: 100%;
-	width: 100%;
-	text-shadow: 0 0 10px #2eb3b0;
+	filter: drop-shadow(0 0 0.5rem #f44786);
 }
 
 .heading-section {
@@ -252,7 +247,7 @@ body {
 
 .timer {
 	height: 100%;
-	margin-top: 0.4rem;
+
 	padding: 4rem 0rem;
 	display: block;
 }
@@ -750,6 +745,7 @@ h2 {
 
 /*footer*/
 footer {
+	margin-top: auto;
 	padding-top: 3rem;
 	background-color: #0e3742;
 }
@@ -777,6 +773,12 @@ footer a:active {
 .footer-text {
 	font-family: "Roboto", sans-serif;
 	margin-top: 0.6rem;
+	letter-spacing: 0.8px;
+	word-spacing: 2px;
+	padding: 0.2rem 0.5rem;
+}
+.footer-text a {
+	font-weight: bold;
 }
 .footer-row {
 	height: 2rem;
@@ -786,10 +788,10 @@ footer a:active {
 @media (max-width: 780px) {
 	/* margin: 10px; */
 	.timer {
-		font-size: 60%;
+		font-size: 50%;
 	}
 	.btnn {
-		font-size: 100%;
+		font-size: 150%;
 		padding: 0.8rem 0.8rem;
 	}
 }
@@ -892,6 +894,11 @@ footer a:active {
 	}
 	.participants h2 {
 		font-size: 170%;
+	}
+}
+@media (max-width: 458px) {
+	.elimination {
+		font-size: 2.5rem;
 	}
 }
 @media (max-width: 387px) {

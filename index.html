@@ -31,10 +31,11 @@
 		<link rel="stylesheet" href="css/style.css" />
 
 		<title>Crown Jewel</title>
+		<link rel="shortcut icon" type="image" href="./resources/squiidpeeps.png" />
 	</head>
 
 	<body>
-		<nav class="navbar navbar-expand-sm">
+		<nav class="navbar navbar-expand-lg" id="navbar-stick">
 			<img class="logo navbar-brand" src="./resources/istebg.png" alt="" />
 
 			<button
@@ -51,7 +52,7 @@
 				></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbar">
-				<ul class="navbar-nav text-center ml-auto">
+				<ul class="navbar-nav text-center ml-auto" id="menu">
 					<li class="nav-item">
 						<a href="#" class="nav-link links"><span>Home</span> </a>
 					</li>
@@ -66,6 +67,11 @@
 							><span>Leaderboard</span>
 						</a>
 					</li>
+					<li class="nav-item">
+						<a href="#eliminations" class="nav-link links"
+							><span>Eliminations</span>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</nav>
@@ -76,9 +82,7 @@
 				<div class="col-sm-12 heading-section">
 					<div class="row justify-content-center align-content-center">
 						<div class="col-sm-12 text-center">
-							<h1 class="banner-heading1">
-								Crown <span class="banner-heading2">Jewel</span>
-							</h1>
+							<h1 class="banner-heading1">Crown Jewel</h1>
 						</div>
 					</div>
 					<div class="row justify-content-center align-content-center timer">
@@ -431,7 +435,7 @@
 
 			<div class="counter my-4">
 				<div class="container-fluid text-center">
-					<div class="container">
+					<div class="container" id="eliminations">
 						<h1 class="elimination">ELIMINATIONS</h1>
 					</div>
 					<div class="row">
@@ -559,6 +563,14 @@
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
 			AOS.init();
+		</script>
+		<script type="text/javascript">
+			AOS.init({
+				disable: function () {
+					var maxWidth = 800;
+					return window.innerWidth < maxWidth;
+				},
+			});
 		</script>
 	</body>
 </html>
