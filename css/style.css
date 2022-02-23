@@ -114,48 +114,6 @@ body {
 	filter: drop-shadow(0 0 1.5rem #ed1b76);
 }
 
-.links ::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	border-radius: 0.5rem;
-	background: #ff287e;
-	transition: 0.3s ease-in-out;
-	z-index: -1;
-
-	clip-path: polygon(
-		-2% 0%,
-		-1% 0%,
-		-1% 100%,
-		101% 100%,
-		101% 0%,
-		102% 0%,
-		102% 100%,
-		-2% 100%
-	);
-}
-
-.links:hover ::before {
-	clip-path: polygon(
-		-1% 0%,
-		50% 0%,
-		50% 100%,
-		50% 100%,
-		50% 0%,
-		101% 0%,
-		101% 100%,
-		-1% 100%
-	);
-}
-
-.links:hover {
-	text-decoration: none;
-	color: #ffffff;
-}
-
 .links:active ::before {
 	clip-path: polygon(
 		-1% 48%,
@@ -290,6 +248,47 @@ body {
 	padding-top: 3rem;
 }
 @media (hover) {
+	.links ::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		border-radius: 0.5rem;
+		background: #ff287e;
+		transition: 0.3s ease-in-out;
+		z-index: -1;
+
+		clip-path: polygon(
+			-2% 0%,
+			-1% 0%,
+			-1% 100%,
+			101% 100%,
+			101% 0%,
+			102% 0%,
+			102% 100%,
+			-2% 100%
+		);
+	}
+
+	.links:hover ::before {
+		clip-path: polygon(
+			-1% 0%,
+			50% 0%,
+			50% 100%,
+			50% 100%,
+			50% 0%,
+			101% 0%,
+			101% 100%,
+			-1% 100%
+		);
+	}
+
+	.links:hover {
+		text-decoration: none;
+		color: #ffffff;
+	}
 	.rules-card:hover {
 		box-shadow: 1px 1px 120px -26px rgba(0, 0, 0, 0.75);
 		-webkit-box-shadow: 1px 1px 120px -26px rgba(0, 0, 0, 0.75);
@@ -297,11 +296,10 @@ body {
 		transform: scale(1.05);
 		transition: 0.3s ease-in-out;
 	}
-
-	.rules-list li {
-		list-style-type: circle;
-		padding: 0.5rem;
-	}
+}
+.rules-list li {
+	list-style-type: circle;
+	padding: 0.5rem;
 }
 .ion-icon-1 {
 	font-size: 8vw;
@@ -395,6 +393,9 @@ body {
 	}
 	.rules-head {
 		font-size: 3.6rem;
+	}
+	.rules-list {
+		font-size: 1.2rem;
 	}
 }
 @media (max-width: 568px) {
@@ -834,7 +835,7 @@ footer a:active {
 		margin-top: 2rem;
 	}
 	.rules-card {
-		margin: 0rem 4rem;
+		margin: 0rem 6rem;
 	}
 }
 @media (max-width: 753px) {
