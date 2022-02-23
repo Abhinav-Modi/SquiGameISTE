@@ -101,7 +101,6 @@ body {
 .logo {
 	width: 20%;
 }
-
 .links {
 	text-decoration: none;
 	color: #ffffff;
@@ -113,19 +112,13 @@ body {
 	z-index: 1;
 	filter: drop-shadow(0 0 1.5rem #ed1b76);
 }
-
-.links:active ::before {
-	clip-path: polygon(
-		-1% 48%,
-		50% 48%,
-		50% 52%,
-		50% 52%,
-		50% 48%,
-		101% 48%,
-		101% 52%,
-		-1% 52%
-	);
+.links:visited {
+	color: #ffffff;
 }
+.links:active {
+	color: #ffffff;
+}
+
 #navbar-stick {
 	position: fixed;
 	top: 0;
@@ -248,6 +241,18 @@ body {
 	padding-top: 3rem;
 }
 @media (hover) {
+	.links {
+		text-decoration: none;
+		color: #ffffff;
+		padding: 0.3rem;
+		margin: 1rem;
+		position: relative;
+		text-transform: uppercase;
+		border-radius: 0.1rem;
+		z-index: 1;
+		filter: drop-shadow(0 0 1.5rem #ed1b76);
+	}
+
 	.links ::before {
 		content: "";
 		position: absolute;
@@ -288,6 +293,19 @@ body {
 	.links:hover {
 		text-decoration: none;
 		color: #ffffff;
+	}
+
+	.links:active ::before {
+		clip-path: polygon(
+			-1% 48%,
+			50% 48%,
+			50% 52%,
+			50% 52%,
+			50% 48%,
+			101% 48%,
+			101% 52%,
+			-1% 52%
+		);
 	}
 	.rules-card:hover {
 		box-shadow: 1px 1px 120px -26px rgba(0, 0, 0, 0.75);
