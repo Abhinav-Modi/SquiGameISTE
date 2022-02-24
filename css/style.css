@@ -45,7 +45,6 @@ html {
 	overflow-x: hidden;
 }
 
-
 body {
 	font-family: TheShape;
 	font-size: 14px;
@@ -629,9 +628,9 @@ tbody {
 	.leaderboard {
 		height: 130vw;
 	}
-	.counter {
+	/* .counter {
 		padding-top: 30rem !important;
-	}
+	} */
 }
 
 @media screen and (max-width: 335px) {
@@ -659,7 +658,7 @@ thead {
 	padding: 0;
 	margin: 0;
 
-	padding-top: 25rem;
+	/* padding-top: 25rem; */
 }
 
 i {
@@ -749,6 +748,10 @@ h2 {
 	100% {
 		background-position: 400%;
 	}
+}
+#rp {
+	font-size: 4rem;
+	font-weight: 700;
 }
 
 .linkkk {
@@ -895,6 +898,9 @@ footer a:active {
 	.participants h2 {
 		font-size: 200%;
 	}
+	#rp {
+		font-size: 2rem;
+	}
 }
 @media (max-width: 1071px) {
 	.counter {
@@ -902,6 +908,9 @@ footer a:active {
 	}
 	.participants h2 {
 		font-size: 190%;
+	}
+	#rp {
+		font-size: 1.6rem;
 	}
 }
 @media (max-width: 791px) {
