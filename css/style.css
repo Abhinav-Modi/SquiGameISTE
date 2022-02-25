@@ -2,6 +2,7 @@
 	font-family: TheShape;
 	src: url(../resources/The\ Shape\ Of\ Things.otf);
 }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Rubik:wght@400;500;600;700&display=swap");
 
 /*custom scrollbar*/
 
@@ -225,10 +226,11 @@ body {
 }
 .about-content {
 	text-align: center;
-	font-family: "Roboto", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 1.625rem;
 	line-height: 1.7rem;
 	word-spacing: 2px;
+	font-weight: 400;
 }
 
 /* Rules */
@@ -303,6 +305,7 @@ body {
 			-1% 52%
 		);
 	}
+
 	.rules-card:hover {
 		box-shadow: 1px 1px 120px -26px rgba(0, 0, 0, 0.75);
 		-webkit-box-shadow: 1px 1px 120px -26px rgba(0, 0, 0, 0.75);
@@ -674,6 +677,7 @@ h1 {
 
 h2 {
 	color: teal;
+	font-size: 1.8rem;
 }
 
 .intro {
@@ -684,11 +688,11 @@ h2 {
 }
 .num {
 	color: #ed1b76;
-	margin-top: 10%;
-	font-size: 3.5rem;
+	margin-top: 5%;
+	font-size: 2.5rem;
 }
 .nump {
-	margin-top: 20%;
+	margin-top: 10%;
 }
 .green {
 	color: teal;
@@ -750,8 +754,9 @@ h2 {
 	}
 }
 #rp {
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: 700;
+	color: #ed1b76;
 }
 
 .linkkk {
@@ -761,7 +766,10 @@ h2 {
 .navv a {
 	font-size: 1rem;
 }
-
+.sponsor {
+	margin-top: 10%;
+	margin-bottom: 2%;
+}
 /*footer*/
 footer {
 	margin-top: auto;
