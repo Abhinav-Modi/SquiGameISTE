@@ -352,6 +352,9 @@ body {
 		0.05em 0.05em 0 rgba(0, 0, 255, 0.418),
 		0.075em 0.075em 0 rgba(255, 0, 0, 0.5), 0.01em 0.01em 0 rgba(0, 0, 0, 0.493);
 }
+.rules-info {
+	font-weight: bold;
+}
 ::marker {
 	color: #ed1b76;
 }
